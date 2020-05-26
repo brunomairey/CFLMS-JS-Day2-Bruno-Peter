@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+var values = [ 1, 7, -3, 9]
+// document.write(Math.max.apply(null, values+'<br><br>'))
+ document.write(Math.max(...values));
+
+var grade_letter;
+var grade = [16, 85, 65, 93, 81];
+var result=[];
+i=0;
+while (grade.length > i) {
+
+	if (grade[i] < 60) {
+  grade_letter = "F";
+  result.push(grade_letter);
+  document.write(grade[i]+"=>"+grade_letter+"<br>")
+} else if (grade[i] < 80 && grade[i] >= 60) {
+  grade_letter = "C";
+  result.push(grade_letter);
+  document.write(grade[i]+"=>"+grade_letter+"<br>")
+} else {
+   grade_letter = "A";
+  result.push(grade_letter);
+  document.write(grade[i]+"=>"+grade_letter+"<br>")
+};i++
+
+}
+
+
+
+</script>
+</body>
+</html>
