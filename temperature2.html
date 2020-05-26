@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>temperature_generator 2.0</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p>temperature_generator</p>
+
+	<button id="Btn" onclick="document.getElementById('temp').innerHTML = getRndInteger(-5,25)">create temperature</button>
+
+<p id="temp"></p>
+
+<script>
+
+function getRndInteger(min, max) {
+  var randNum=  Math.floor(Math.random() * (max - min + 1) ) + min;
+  console.log(randNum);
+  if (randNum < 11) {
+   return "wear a coat!";
+} else {
+   return "weather is looking good!";
+}
+}
+
+// document.getElementById("Btn").addEventListener("click",function(){
+// 	getRndInteger(-5, 25)
+// })
+
+</script>
+</body>
+</html>

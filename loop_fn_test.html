@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>loop</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p>triangle_generator</p>
+
+	<button id="Btn" onclick="document.getElementById('temp').innerHTML = loop">create temperature</button>
+
+<p id="temp"></p>
+
+<script>
+
+var i = 1;
+var msg = '*';
+while (i < 7) {
+    msg += + '<br/>';
+    document.write(msg);
+    i++;
+}
+
+function loop {
+	var i = 1;
+	var msg = '*';
+	while (i < 7) {
+    msg += + '<br/>';
+    document.write(msg);
+    i++;
+	}
+}
+</script>
+</body>
+</html>
